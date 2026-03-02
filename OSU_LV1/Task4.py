@@ -1,6 +1,5 @@
 ﻿word_counts = {}
-fhand = open(r'C:\Users\mujan\OneDrive\Desktop\Osnove strojnog učenja\LV1 Uvod u programski jezik Python-20260225\song.txt')
-    
+fhand = open("song.txt", encoding="utf-8")
 for line in fhand:
        
     line = line.rstrip()
@@ -21,4 +20,4 @@ for word in word_counts:
     if word_counts[word] == 1:
         once_words.append(word)
 
-print(f"Broj riječi koje se pojavljuju samo jednom: {len(once_words)}\n {once_words}")
+print(f"Words that appear only once: {len(once_words)}\n {once_words}")
